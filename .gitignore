@@ -6,3 +6,5 @@
 *.pyc
 
 *.pyc
+
+django_maya/django_maya/settings.pyc
