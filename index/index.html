@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Argo Plan - IPv6 上网盒子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        //padding-top: 60px;
+        padding-bottom: 10px;
+        background-image: url('img/bg.png');
+      }
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 640px;
+      }
+      .subtitle {
+        padding-top: 12px;
+        font-size: 15px;
+        font-weight: 200;
+        color: #999999;
+      }
+      .chn {
+        font-family: "Hiragino Sans GB", "STHeiti", "Heiti SC", "LiHei Pro", "Microsoft YaHei", SimHei;
+      }
+      .header {
+        //background-color: yellow;
+        background-image: url('img/birdy.jpg');
+        min-height:240px;
+        height:auto !important;
+        height:240px; 
+        position: relative;
+      }
+      .place-title {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        color: white;
+        font-size: 80px;
+        font-family: "Georgia", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+      .like img {
+        width: 50px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+      }
+      .comment img {
+        width: 50px;
+        position: absolute;
+        bottom: 35px;
+        right: 100px;
+      }
+      .like-count p {
+        position: absolute;
+        bottom: 0px;
+        right: 36px;
+        font-size: 20px;
+        font-family: "Georgia", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: white;
+      }
+      .comment-count p {
+        position: absolute;
+        bottom: 0px;
+        right: 113px;
+        font-size: 20px;
+        font-family: "Georgia", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: white;
+      }
+      .wall {
+        background-image: url('img/bg.png');
+        min-height:200px;
+        height:auto !important;
+        height:200px; 
+        margin-top: 10px;
+        position: relative;
+      }
+      #slides {
+        width: 590px;
+        height: 428px;
+        display:none;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #slides img {
+        width: 560px;
+        box-shadow: 10px 10px 5px #888888;
+        z-index: 0;
+      }
+      .like-button img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 120px;
+        //left: 295px;
+        right: 70px;
+        z-index: 100;
+      }
+      .text-slide {
+        vertical-align: middle;
+      }
+      .text-slide p {
+        font-size: 80px;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        box-shadow: 10px 10px 5px #888888;
+        width: 560px;
+        min-height:328px;
+        height:auto !important;
+        height:328px; 
+        text-align: center;
+        line-height: 100%;
+        background-image: url('img/text-bg.png');
+      }
+      .input {
+        margin-top: -70px;
+        position: relative;
+        z-index: 200;
+      }
+      .center {
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+        //text-align: center;
+        //margin-left: 100px;
+        //horizon-align:
+      }
+      .input input {
+        width: 68%;
+      }
+      #submit {
+        width: 15%;
+        margin-bottom: 12px;
+      }
+      #upload {
+        width: 12%;
+        margin-bottom: 12px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--
+     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+     -->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="header">
+        <p class="place-title">BEIJING</p>        
+        <div class="like">
+          <img src="img/like.svg">
+        </div>
+        <div class="comment">
+          <img src="img/comment.png">
+        </div>
+        <div class="like-count">
+          <p>1021</p> 
+        </div>
+        <div class="comment-count">
+          <p>523</p> 
+        </div>
+      </div>
+
+      <div class="wall">
+        <div class="like-button">
+          <img src="img/like.svg">
+        </div>
+        <div id="slides">
+          <!--<img src="http://lorempixel.com/940/528">
+          <img src="http://lorempixel.com/940/528">
+          <img src="http://lorempixel.com/940/528">
+          <img src="http://lorempixel.com/940/528">-->
+          <div class="picture-slide">
+            <img src="http://lorempixel.com/940/528">
+          </div>
+          <div class="text-slide">
+            <p>Argo Fuck Yourself.</p>
+          </div>
+          <div class="text-slide">
+            <p>Argo Fuck Yourself.</p>
+          </div>
+          <div class="text-slide">
+            <p>Argo Fuck Yourself.</p>
+          </div>
+          <div class="text-slide">
+            <p>Argo Fuck Yourself.</p>
+          </div>
+          <div class="text-slide">
+            <p>Argo Fuck Yourself.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="input">
+        <form class="center">
+          <fieldset>
+            <input type="text" placeholder="Type something…">
+            <button id="upload" type="submit" class="btn">Upload</button>
+            <button id="submit" type="submit" class="btn">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Argo Fuck Yourself 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+     <script>
+       $(function(){
+         $("#slides").slidesjs({
+           width: 560,
+           height: 428,
+           play: {
+             active: false,
+             auto: true,
+             pauseOnHover: true,
+             interval: 5000,
+             swap: true
+          },
+          navigation: {
+            active: false
+          },
+          pagination: {
+            active: false
+          }
+        });
+      });
+     </script>
+
+  </body>
+</html>
+
