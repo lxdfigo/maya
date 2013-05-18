@@ -6,7 +6,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-     url(r'^$', 'django_maya.views.home', name='home'),
+    url(r'^$', 'django_maya.views.home', name='home'),
+	url(r'^place/$', 'django_maya.views.place'),
     # url(r'^django_maya/', include('django_maya.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
