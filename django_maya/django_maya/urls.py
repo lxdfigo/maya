@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^$', 'django_maya.views.home', name='home'),
 	url(r'^place/$', 'django_maya.views.place'),
 	url(r'^content/(?P<path>.*)','django.views.static.serve',{'document_root':'content'})
+	url(r'^post/$', 'django_maya.views.postMessage'),
     # url(r'^django_maya/', include('django_maya.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
