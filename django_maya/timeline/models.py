@@ -19,3 +19,4 @@ class Message(models.Model):
 	comment = models.CharField(max_length = 5000, default = '')
 	time = models.DateTimeField(auto_now_add = True)
 	likes = models.IntegerField(default = 0)
+	user = models.CharField(max_length = 50, default = 'Anonymous')

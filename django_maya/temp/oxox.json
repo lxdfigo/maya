@@ -1,0 +1,42 @@
+{
+    "timeline": {
+        "headline": "Sh*t People Say", 
+        "text": "People say stuff", 
+        "startDate": "2012,1,26", 
+        "type": "default", 
+        "date": [
+            {
+                "headline": "Vine", 
+                "startDate": "2011,12,12", 
+                "endDate": "2012,1,27", 
+                "asset": {
+                    "media": "https://vine.co/v/b55LOA1dgJU", 
+                    "credit": "", 
+                    "caption": ""
+                }, 
+                "text": "<p>Vine Test</p>"
+            }, 
+            {
+                "headline": "Sh*t Politicians Say", 
+                "startDate": "2012,1,26", 
+                "endDate": "2012,1,27", 
+                "asset": {
+                    "media": "http://youtu.be/u4XpeU9erbg", 
+                    "credit": "", 
+                    "caption": ""
+                }, 
+                "text": "<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>"
+            }, 
+            {
+                "headline": "Sh*t Nobody Says", 
+                "startDate": "2012,1,10", 
+                "asset": {
+                    "media": "http://youtu.be/f-x8t0JOnVw", 
+                    "credit": "", 
+                    "caption": ""
+                }, 
+                "text": "<p>Have you ever heard someone say \u201ccan I burn a copy of your Nickelback CD?\u201d or \u201cmy Bazooka gum still has flavor!\u201d Nobody says that.</p>"
+            }
+        ]
+    }
+}

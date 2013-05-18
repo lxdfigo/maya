@@ -1,10 +1,14 @@
 # Create your views here.
 from django.core.serializers import serialize
 from timeline.models import *
+import json
 
-def getData(location, event):
-	msg_list = Message.objects.filter(location = location, event = event)
-	return serialize('json', msg_list)
+
+def getJSON(location, event):
+	location.replace(' ', '')
+	event.replace(' ', '')
+	fp = open('%s_%s.json'%(location, event), 'r')
+	return json.loads(fp)
 	'''
 	data = []
 	for msg in msg_list:

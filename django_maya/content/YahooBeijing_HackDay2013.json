@@ -2,19 +2,18 @@
 {
     "timeline":
     {
-        "headline":"Sh*t People Say",
+        "headline":"Yahoo! Beijing",
         "type":"default",
-		"text":"People say stuff",
+		"text":"R&D",
 		
         "date": [
             {
-                "startDate":"2011,12,12",
-				"endDate":"2012,1,27",
-                "headline":"Vine",
-                "text":"<p>Vine Test</p>",
+                "startDate":"2013,5,18",
+                "headline":"Happy to be here :-)",
+                "text":"<p>Posted by Fudan Maya</p>",
                 "asset":
                 {
-                    "media":"https://vine.co/v/b55LOA1dgJU",
+                    "media":"http://www-us.flickr.com/photos/ydn/8740167091/in/photostream",
                     "credit":"",
                     "caption":""
                 }
@@ -34,7 +33,7 @@
             {
                 "startDate":"2012,1,10",
                 "headline":"Sh*t Nobody Says",
-                "text":"<p>Have you ever heard someone say ‚Äúcan I burn a copy of your Nickelback CD?‚Äù or ‚Äúmy Bazooka gum still has flavor!‚Äù Nobody says that.</p>",
+                "text":"<p>Have you ever heard someone say °∞can I burn a copy of your Nickelback CD?°± or °∞my Bazooka gum still has flavor!°± Nobody says that.</p>",
                 "asset":
                 {
                     "media":"http://youtu.be/f-x8t0JOnVw",
@@ -45,3 +44,4 @@
         ]
     }
 }
+
