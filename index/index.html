@@ -152,6 +152,19 @@ position: relative;
 	  }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" src="js/cordova-2.7.0.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/sprintf.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(
+			function(){
+				setInterval(
+					function(){
+					},5000);
+			}
+		);
+	</script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -203,24 +216,15 @@ position: relative;
           <div class="text-slide">
             <p>Argo Fuck Yourself.</p>
           </div>
-          <div class="text-slide">
-            <p>Argo Fuck Yourself.</p>
-          </div>
-          <div class="text-slide">
-            <p>Argo Fuck Yourself.</p>
-          </div>
-          <div class="text-slide">
-            <p>Argo Fuck Yourself.</p>
-          </div>
         </div>
       </div>
 
       <div class="input">
-        <form class="center">
+        <form class="center" enctype="multipart/form-data" method="POST" action="http://fdumaya.com/post/">
           <fieldset>
-            <input type="text" placeholder="Type something…">
-            <button id="upload" type="submit" class="btn">Upload</button>
-            <button id="submit" type="submit" class="btn">Submit</button>
+            <input type="text" name="comment" placeholder="Type something…">
+			<input id="upload" type="file" name="file" />
+            <!--<button id="submit" type="submit" class="btn">Submit</button>-->
           </fieldset>
         </form>
       </div>
@@ -276,7 +280,7 @@ position: relative;
              active: false,
              auto: true,
              pauseOnHover: true,
-             interval: 5000,
+             interval: 2000,
              swap: true
           },
           navigation: {
