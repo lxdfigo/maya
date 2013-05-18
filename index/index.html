@@ -155,16 +155,24 @@ position: relative;
     <script type="text/javascript" charset="utf-8" src="js/cordova-2.7.0.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/sprintf.js"></script>
-	
+
 	<script type="text/javascript">
 		$(document).ready(
 			function(){
-				setInterval(
-					function(){
-					},5000);
+				$("#heartimg").click(function(){
+						$(this).removeAttr("src").attr("src","img/like.svg");
+  				});
+				$("#submit").click(function(){
+					setTimeout(function(){
+					  location.reload();
+					}, 2000);
+					
+  				});
+				
 			}
 		);
 	</script>
+	
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -200,21 +208,29 @@ position: relative;
       <div class="wall">
         <div class="like-button">
           <!--<img src="img/like.svg">-->
-          <img src="img/unlike.png">
+          <img id="heartimg" src="img/unlike.png">
         </div>
         <div id="slides">
-          <!--<img src="http://lorempixel.com/940/528">
-          <img src="http://lorempixel.com/940/528">
-          <img src="http://lorempixel.com/940/528">
-          <img src="http://lorempixel.com/940/528">-->
+            <div class="text-slide">
+              <p>Congratulations on being selected to participate in Yahoo! Hack Beijing! We are waiting for you in Yahoo.</p>
+            </div>
           <div class="picture-slide">
-            <img src="http://lorempixel.com/940/528">
+            <img src="img/bag.jpg">
           </div>
-          <div class="text-slide">
-            <p>Argo Fuck Yourself.</p>
+          <div class="text-slide"> 
+            <p>I am a pythoner, I enjoyed tornado and webpy. Anyone would like to make the team with me?</p>
           </div>
-          <div class="text-slide">
-            <p>Argo Fuck Yourself.</p>
+          <div class="picture-slide">
+            <img src="img/office.jpg">
+          </div>
+          <div class="text-slide"> 
+            <p>Yahoo office is incredible awesome! I like it!</p>
+          </div>
+          <div class="picture-slide">
+            <img src="img/logo.jpg">
+          </div>
+          <div class="text-slide"> 
+            <p>HAVE FUN ALL THE TIME！</p>
           </div>
         </div>
       </div>
@@ -223,7 +239,7 @@ position: relative;
         <form class="center" enctype="multipart/form-data" method="POST" action="http://fdumaya.com/post/">
           <fieldset>
             <input type="text" name="comment" placeholder="Type something…">
-			<input id="upload" type="file" name="file" />
+			<input id="upload" type="file" name="file" class="btn"/>
             <button id="submit" type="submit" class="btn">Submit</button>
           </fieldset>
         </form>
@@ -269,7 +285,7 @@ position: relative;
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     <script src="js/jquery.slides.min.js"></script>
      <script>
        $(function(){
