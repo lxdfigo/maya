@@ -168,9 +168,17 @@ position: relative;
 	<script type="text/javascript">
 		$(document).ready(
 			function(){
-				$("#heartimg").click(function(){
-						$(this).removeAttr("src").attr("src","img/like.svg");
+				$(".like-button").click(function(){
+					$("#unlikeimg").hide();
+					$("#likeimg").show();
   				});
+				$(".wall").click(function(){
+					$("#unlikeimg").hide();
+					$("#likeimg").show();
+				});
+				$(".header").click(function(){
+					location.replace("location.html");
+				});
 			}
 		);
 	</script>
@@ -243,7 +251,8 @@ position: relative;
       <div class="wall">
         <div class="like-button">
           <!--<img src="img/like.svg">-->
-          <img id="heartimg" src="img/unlike.png">
+          <img id="unlikeimg" src="img/unlike.png">
+		  <img id="likeimg" src="img/like.svg" style="display: none">
         </div>
         <div id="slides">
             <div class="text-slide">
