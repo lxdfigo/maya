@@ -1,11 +1,5 @@
 *.swp
-*.pyc
-
-*.pyc
-
-*.pyc
-
-*.pyc
+.DS_Store
 
 django_maya/django_maya/settings.pyc
 
