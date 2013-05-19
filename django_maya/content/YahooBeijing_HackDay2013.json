@@ -8,9 +8,97 @@
 		
         "date": [
             {
-                "startDate":"2013,5,18",
-                "headline":"Happy to be here :-)",
-                "text":"<p>Posted by Fudan Maya</p>",
+                "startDate":"2013,5,19,12,00",
+                "headline":"It's SHOW TIME! Expecting innovative idea!",
+                "text":"<p>Joyce Zhu</p>",
+                "asset":
+                {
+                    "media":"http://www-us.flickr.com/photos/ydn/8749050153/in/photostream",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,18,19,00",
+                "headline":"7 hours has passed since Yahoo! Hack Beijing began. Who will be the winners? :-)",
+                "text":"<p>Posted by yahoobj</p>",
+                "asset":
+                {
+                    "media":"http://fdumaya.com/content/3.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,11,45",
+                "headline":"Wow. Lunch is nice.",
+                "text":"<p>Posted by wangsl</p>",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,11,30",
+                "headline":"Tech talk",
+                "text":"<p>Posted by juezhang</p>",
+                "asset":
+                {
+                    "media":"http://fdumaya.com/content/11.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,10,30",
+                "headline":"Tech talk",
+                "text":"<p>Posted by joe Lin</p>",
+                "asset":
+                {
+                    "media":"http://fdumaya.com/content/9.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,9,23",
+                "headline":"Tech talk",
+                "text":"<p>Posted by Yahoobj</p>",
+                "asset":
+                {
+                    "media":"http://www-us.flickr.com/photos/ydn/8749050579/in/photostream",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,9,11",
+                "headline":"Welcome speech",
+                "text":"<p>Posted by Yahoobj</p>",
+                "asset":
+                {
+                    "media":"http://www-us.flickr.com/photos/ydn/8749049039/in/photostream",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,18,9,00",
+                "headline":"Yahoo office is incredible awesome! I like it!",
+                "text":"<p>Posted by xiaoxia</p>",
+                "asset":
+                {
+                    "media":"http://fdumaya.com/content/15.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2013,5,16,10,00",
+                "headline":"Congratulations on being selected to participate in Yahoo! Hack Beijing! We are waiting for you in Yahoo.",
+                "text":"<p>Posted by Yahoobj</p>",
                 "asset":
                 {
                     "media":"http://www-us.flickr.com/photos/ydn/8740167091/in/photostream",
@@ -18,25 +106,13 @@
                     "caption":""
                 }
             },
-            {
-                "startDate":"2012,1,26",
-				"endDate":"2012,1,27",
-                "headline":"Sh*t Politicians Say",
-                "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>",
+			{
+                "startDate":"2013,5,19,9,44",
+                "headline":"We are Fudan Maya.",
+                "text":"<p>Posted by maya</p>",
                 "asset":
                 {
-                    "media":"http://youtu.be/u4XpeU9erbg",
-                    "credit":"",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2012,1,10",
-                "headline":"Sh*t Nobody Says",
-                "text":"<p>Have you ever heard someone say ¡°can I burn a copy of your Nickelback CD?¡± or ¡°my Bazooka gum still has flavor!¡± Nobody says that.</p>",
-                "asset":
-                {
-                    "media":"http://youtu.be/f-x8t0JOnVw",
+                    "media":"https://vine.co/v/bElvLBP3e2p",
                     "credit":"",
                     "caption":""
                 }

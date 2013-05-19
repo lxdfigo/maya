@@ -34,17 +34,19 @@ def place(request):
 def addWallJSON(msg_type, msg):
 	json_loc = '%swall.json' % MEDIA_ROOT
 	fp = open(json_loc, 'r')
-	data = json.loads(fp)
+	data = json.loads(fp.read().strip())
 	fp.close()
 
-	if msg_type == 'file':
-		data.append({'type' : 'file', 'location' : MEDIA_URL + msg})
-	if msg_type == 'comment':
-		data.append({'type' : 'comment', 'comment' : msg})
+	if msg_type == 'file' and msg != '':
+		data['div'].append({'type' : 'file', 'location' : MEDIA_URL + msg})
+	if msg_type == 'comment' and msg != '':
+		data['div'].append({'type' : 'comment', 'comment' : msg})
 
 	fp = open(json_loc, 'w')
-	fp.write(json.dumps(data), indent = 4)
+	new_json = json.dumps(data, indent = 4)
+	fp.write(new_json)
 	fp.close()
+	return new_json
 		
 		
 
@@ -52,16 +54,20 @@ def postMessage(request):
 	#check file:
 	if 'file' in request.FILES:
 		f = request.FILES['file']
-		fname = uuid.uuid4()
+		fname = str(uuid.uuid4())
 		ftype = f.name[f.name.find('.') + 1: ]
 		loc = '%s%s.%s' % (MEDIA_ROOT, fname, ftype)
 		fp = open('%s%s.%s' % (MEDIA_ROOT, fname, ftype), 'wb')
 		for chunk in f.chunks():
 			fp.write(chunk)
 		fp.close()
-		addWallJSON('file', loc)
+		addWallJSON('file', fname + '.' + ftype)
 	if 'comment' in request.POST:
-		addWallJSON('comment', request.POST['comment'])
+		new_json = addWallJSON('comment', request.POST['comment'])
+	#return HttpResponse(new_json, content_type = 'application/json')
+	prev_url = request.build_absolute_uri()
+	prev_url = prev_url[:prev_url.find('post')]
+	return HttpResponseRedirect(prev_url)
 		
 		
 	
