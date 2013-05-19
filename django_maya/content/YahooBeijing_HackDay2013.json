@@ -5,6 +5,11 @@
         "headline":"Yahoo! Beijing",
         "type":"default",
 		"text":"R&D",
+		"asset": {
+            "media":"http://fdumaya.com/content/yahoo_title.jpg",
+            "credit":"",
+            "caption":""
+        },
 		
         "date": [
             {
