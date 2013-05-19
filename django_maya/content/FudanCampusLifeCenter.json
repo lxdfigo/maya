@@ -2,9 +2,16 @@
 {
     "timeline":
     {
-        "headline":"Fudan University",
+        "headline":"Fudan Street",
         "type":"default",
-		"text":"A history of a street.",
+		"text":"History of a small street.",
+		"asset":
+        {
+			"media":"http://fdumaya.com/content/fudan-campus-gate.jpg",
+            "credit":"",
+            "caption":""
+        },
+
 		
         "date": [
             {
